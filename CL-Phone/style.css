@@ -104,6 +104,7 @@ Phone Configuration
 	width: 155px;
 	margin-left: -155px;
 	background: linear-gradient(180deg, var(--blue1) 0%, var(--blue3) 100%);
+	z-index: 2;
 }
 
 .phone-banner {
@@ -347,6 +348,10 @@ Phone Configuration
 	background-color: var(--white1);
 }
 
+.dial-number-each-active {
+	background-color: var(--white1);
+}
+
 .dial-number-each svg {
 	height: 10px;
 	width: 10px;
@@ -377,6 +382,10 @@ Phone Configuration
 	height: 1.3px;
 	width: 6px;
 	background-color: var(--grey2);
+}
+
+.status-color p:not(:last-child) {
+	background-color: #317c3b !important;	
 }
 
 .footer-banner p:not(:first-child) {
@@ -415,8 +424,8 @@ Contact Configuration
 	top: 26px;
 	width: 155px;
 	height: 218px;
-	margin-left: -310px;
-	
+	margin-left: -155px;
+	z-index: 1;
 }
 
 .slider-1 {
@@ -621,7 +630,17 @@ Contact Configuration
 }
 
 /*
-* {
-	outline : 1px solid red;
-}
+----------------------------------
+Animation Configuration
+----------------------------------
 */
+
+.open-contact {
+	transition: all 0.2s ease-in-out;
+	margin-left: -310px;
+}
+
+.close-contact {
+	transition: all 0.2s ease-in-out;
+	margin-left: -155px;
+}
