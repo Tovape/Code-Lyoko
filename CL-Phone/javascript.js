@@ -1,4 +1,3 @@
-
 function start() {
 	const contact = document.getElementById("contact");
 	let inputnumber = document.getElementById("input-number").value;
